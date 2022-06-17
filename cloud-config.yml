@@ -1,0 +1,16 @@
+#cloud-config
+
+rancher:
+ network:
+  interfaces:
+   eth0:
+    address: 192.168.3.52/24
+    gateway: 192.168.3.1
+    dhcp: false
+  dns:
+   nameservers: 
+    - 192.168.2.153
+    - 8.8.8.8
+
+ssh_authorized_keys:
+ - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDDK+ugY7TUJHDw2uNvvjFropwzcWoAFHj7QDMzkCHk4UT2wAJ1U9p3QwOeC1PWVtkzT11e/ADuL/DuzbyAV2IJdUVWoIjp04BkQ6G+HvawgnY0Z0BoMt7lY/HS5ixTPgp2ju5jA+cSFGmFP8rc1QjO03IRUxzHELatSD6rxi1f+ClhhWyOzuTHlC39vAvQtmGahaCgwm8g+7i6mNf5Ue4J5HuXgztHT56bmZ3BDKCRJGmwciF1IHwzWm4PN5sfCJs/WxAm0MKalrA3A/1H7HD/ZOt9XwSif7v9oDnXI8rXbtzHpVmuYzbeQwmf+qsPJ9AvztHTZLycPUKpzuVFjHUZQvSVIN+xM69WUkhWJN8XPU+KNmh4Y7FQNzfmM0roWBnBdcxe9dJbwA2SezFqCK6Zdrl7/tkLeXqAmOoDK8HsrcuDpPvFL1D03B73nYVLoeja+5lfCoj5YijCd8T0PMDbqkXd3R0kftPiVE0VygwhRc1muNp0ob8I9YO2I7S/QjU= duncan@duncan-Precision-7760
